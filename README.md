@@ -1,3 +1,4 @@
+![gif todo](https://github.com/abhisheksol/Todo-App-React-Native/assets/118334375/ac5daa59-b743-4d2f-ac1c-f1763114dd9e)
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView ,Image} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icons from 'react-native-ionicons';
-
+const dele = require('./delete.png');
 function Input() {
     const [input, setInput] = useState('');
     const [array, setArray] = useState([]);
@@ -126,7 +126,7 @@ function Input() {
                             <View style={design.icons}>
                                 <View style={design.buttonContainer}>
                                     <TouchableOpacity onPress={() => onDelete(index)}>
-                                        <Icon name="trash" size={25} color="grey" />
+                                    <Image source={require('./delete.png')} style={design.deleteIcon} />
                                     </TouchableOpacity>
                                 </View>
                             </View>
@@ -158,7 +158,10 @@ const design = StyleSheet.create({
         borderWidth: 2,
         height: 200
     },
-
+    deleteIcon: {
+        width: 25,
+        height: 25,
+    },
     icons: {
         flexDirection: 'row',
         position: 'absolute',
